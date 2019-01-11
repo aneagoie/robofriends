@@ -4,34 +4,27 @@
 #
 version: 2
 jobs:
-  build:
+  job1:
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
 
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
+    steps:
+      - checkout
 
-    working_directory: ~/repo
+      - run: yarn test
+  job2:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:7.10
 
     steps:
       - checkout
 
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
-
-      - run: yarn install
-
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-
-      # run tests!
-      - run: yarn test
+      - run: echo "Double Trouble"
+  workflows:
+    version: 2
+    job1_job2:
+      jobs:
+        - job1
+        - job2
