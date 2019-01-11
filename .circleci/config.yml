@@ -8,23 +8,19 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
-
     steps:
       - checkout
-
-      - run: yarn test
+      - run: echo "Job1"
   job2:
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
-
     steps:
       - checkout
-
       - run: echo "Double Trouble"
-  workflows:
-    version: 2
-    job1_job2:
-      jobs:
-        - job1
-        - job2
+workflows:
+  version: 2
+  job1_job2:
+    jobs:
+      - job1
+      - job2
