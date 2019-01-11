@@ -1,0 +1,26 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  job1:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:7.10
+    steps:
+      - checkout
+      - run: echo "Job1"
+  job2:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:7.10
+    steps:
+      - checkout
+      - run: echo "Double Trouble"
+workflows:
+  version: 2
+  job1_job2:
+    jobs:
+      - job1
+      - job2
