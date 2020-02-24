@@ -4,6 +4,7 @@
   "homepage": "http://michellerahman21.github.io/robofriends",
   "private": true,
   "dependencies": {
+    "@bynder/bynder-js-sdk": "^2.3.0",
     "gh-pages": "^2.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -15,8 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
