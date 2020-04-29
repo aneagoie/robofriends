@@ -12,9 +12,9 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run: echo "Double Trouble" # run the `echo` command
-  workflows:
-    version: 2.1
-    bobby_sally:
-      jobs:
-        - bobby
-        - sally
+workflows:
+  version: 2.1
+  bobby_sally:
+    jobs:
+      - bobby
+      - sally
