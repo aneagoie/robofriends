@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node: 10.1
+      - image: circleci/node:10.1
     steps:
       - checkout
       - run: echo "Build"
@@ -10,14 +10,17 @@ jobs:
       - run: CI=true npm run build
   test:
     docker:
-      - image: circleci/node: 10.1
+      - image: circleci/node:10.1
     steps:
       - checkout
       - run: echo "testing stff"
       - run: npm test
   hithere:
-      - checkout
-      - run: echo "helloooo!"
+    docker:
+      - image: circleci/node:10.1
+      steps: 
+        - checkout
+        - run: echo "helloooo!"
 workflows:
   version: 2
   build_test_and_lint:
