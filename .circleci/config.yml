@@ -27,6 +27,6 @@ workflows:
     jobs:
       - build
       - hithere
-      - test
+      - test:
           requires:
             - hithere
