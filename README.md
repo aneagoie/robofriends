@@ -1,6 +1,5 @@
 # robofriends
-Tutorial for udemy course - React
-To run the project:
+GO xD and play with some robots! 
 
 1. Clone this repo
 2. Run `npm install`
