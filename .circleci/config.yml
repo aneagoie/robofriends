@@ -17,8 +17,11 @@ jobs:
       - run: npm test
 
   hithere:
-    - checkout
-    - run: echo 'helllooo!'
+    docker:
+      - image: circleci/node:8.9
+    steps:
+      - checkout
+      - run: echo "helllooo!"
 
 
 workflows:
