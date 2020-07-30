@@ -14,9 +14,9 @@ jobs:
       - checkout
       - run: echo "another hello!"
 
-  workflows:
-    version: 2
-    booby_sally:
-      jobs:
-        - bobby
-        - sally
+workflows:
+  version: 2
+  booby_sally:
+    jobs:
+      - bobby
+      - sally
