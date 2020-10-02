@@ -1,0 +1,21 @@
+.big-card{
+    height: 77.7rem;
+    &__photo{
+        height: 25rem;
+    }
+    &__details{
+        margin-top: 2rem;
+        background-image: LINEAR-GRADIENT(TO RIGHT, RGB(72, 113, 234), RGB(196, 14, 41));
+        height: 6rem;
+        padding: 8rem 0 8rem 0;
+    }
+    &__email{
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+    }
+    &__heading{
+        font-size: 2.7rem;
+        margin-bottom: 1rem;
+        margin-top: -5rem;
+    }
+}

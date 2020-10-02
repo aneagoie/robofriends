@@ -1,0 +1,31 @@
+.u-center-text{
+  text-align: center;
+  margin: 0 auto;
+}
+.u-mrg-big{
+  margin-bottom: 8rem;
+}
+.u-mrg-small{
+  margin-bottom: 2rem;
+}
+.u-mrg-medium{
+  margin-bottom: 4rem;
+}
+.no-mrg{
+  margin: 0;
+}
+.btm-right{
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+}
+.top-left{
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  z-index: 10;
+}
+.big{
+  width: 25rem;
+  height: 4rem;
+}

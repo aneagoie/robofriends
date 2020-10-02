@@ -1,0 +1,23 @@
+.header{
+    background-image: LINEAR-GRADIENT(TO RIGHT, RGB(15, 126, 245), RGB(8, 89, 196));
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .6s;  
+    font-size: 6rem;
+    margin: 0 0 5rem 0;
+    text-align: center;
+    margin-top: 3rem;
+    @media screen and (max-width: 600px) {
+      font-size: 4rem;
+    }
+    font-family: 'SEGA LOGO FONT';
+    &:hover,&:active{
+       transform: translateY(.6rem) scale(1.25);
+    }
+    &__heading{
+        display: block;
+        &:hover,&:active{
+        
+        }
+    }
+}
