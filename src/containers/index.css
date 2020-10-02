@@ -6,6 +6,9 @@
 html {
   font-size: 62.5%; }
 
+button {
+  cursor: pointer; }
+
 @keyframes movefromLeft {
   0% {
     opacity: 0;
@@ -40,6 +43,10 @@ a {
 
 .heading-tertiary {
   font-size: 4rem; }
+  @media screen and (max-width: 600px) {
+    .heading-tertiary {
+      margin-top: 2.4rem;
+      font-size: 2.1rem; } }
 
 .para {
   font-size: 1.7rem; }
@@ -51,7 +58,8 @@ a {
   src: local("SEGA LOGO FONT"), url("SEGA.woff") format("woff"); }
 
 .u-center-text {
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
 
 .u-mrg-big {
   margin-bottom: 8rem; }
@@ -70,14 +78,37 @@ a {
   bottom: 0rem;
   right: 0rem; }
 
+.top-left {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  z-index: 10; }
+
+.big {
+  width: 25rem;
+  height: 4rem; }
+
+.Scroll {
+  height: 46rem; }
+
 .card {
-  height: 27rem;
-  margin: 0 auto; }
+  height: 17rem; }
+  @media screen and (max-width: 600px) {
+    .card {
+      height: 12.2rem; } }
   .card__photo {
-    height: 22rem; }
+    height: 11rem; }
+    @media screen and (max-width: 600px) {
+      .card__photo {
+        height: 6.7rem; } }
   .card__details {
-    font-size: 1.5rem;
-    transform: translateX(-10%); }
+    font-size: 1.5rem; }
+    @media screen and (max-width: 600px) {
+      .card__details {
+        font-size: 1rem; } }
+    @media screen and (max-width: 600px) {
+      .card__details--email {
+        font-size: 0.65rem; } }
   .card__design {
     box-shadow: 3px 6px 2rem rgba(0, 0, 0, 0.5);
     border-radius: 1.2rem; }
@@ -87,7 +118,7 @@ a {
   background-image: LINEAR-GRADIENT(TO RIGHT, RGB(0, 0, 0), RGB(0, 0, 0));
   height: 12rem;
   width: 5rem;
-  top: 45%;
+  top: 20%;
   right: 0;
   clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%); }
 
@@ -96,12 +127,13 @@ a {
   background-image: LINEAR-GRADIENT(TO RIGHT, RGB(0, 0, 0), RGB(0, 0, 0));
   height: 12rem;
   width: 5rem;
-  top: 45%;
+  top: 20%;
   left: 0;
   clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%); }
 
 .About__Page {
-  position: relative; }
+  position: relative;
+  background-image: LINEAR-GRADIENT(TO RIGHT, RGB(51, 245, 25), RGB(54, 61, 161)); }
 
 .header {
   background-image: LINEAR-GRADIENT(TO RIGHT, RGB(15, 126, 245), RGB(8, 89, 196));
@@ -111,9 +143,13 @@ a {
   font-size: 6rem;
   margin: 0 0 5rem 0;
   text-align: center;
+  margin-top: 3rem;
   font-family: 'SEGA LOGO FONT'; }
+  @media screen and (max-width: 600px) {
+    .header {
+      font-size: 4rem; } }
   .header:hover, .header:active {
-    transform: translateY(1rem) scale(1.25); }
+    transform: translateY(0.6rem) scale(1.25); }
   .header__heading {
     display: block; }
 
@@ -125,12 +161,25 @@ a {
   height: 30vh;
   position: relative; }
 
-.bigcard {
-  height: device-width; }
+.big-card {
+  height: 77.7rem; }
+  .big-card__photo {
+    height: 25rem; }
+  .big-card__details {
+    margin-top: 2rem;
+    background-image: LINEAR-GRADIENT(TO RIGHT, RGB(72, 113, 234), RGB(196, 14, 41));
+    height: 6rem;
+    padding: 8rem 0 8rem 0; }
+  .big-card__email {
+    font-size: 2rem;
+    margin-bottom: 1.2rem; }
+  .big-card__heading {
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+    margin-top: -5rem; }
 
 .row {
-  width: 128rem;
-  margin: 0px auto;
+  width: 100%;
   margin-bottom: 3rem; }
   .row::after {
     content: "";
@@ -142,17 +191,17 @@ a {
     .row [class^="col-"]:not(:last-child) {
       margin-right: 2rem; }
   .row .col-1-of-2 {
-    width: calc(( 128rem - 2rem)/2); }
+    width: calc(( 100% - 2rem)/2); }
   .row .col-1-of-3 {
-    width: calc((128rem - 2* 2rem)/3); }
+    width: calc((100% - 2* 2rem)/3); }
   .row .col-1-of-4 {
-    width: calc((128rem - 3*2rem)/4); }
+    width: calc((100% - 3*2rem)/4); }
   .row .col-2-of-3 {
-    width: calc((2*(128rem - 2*2rem)/3 ) + 2rem); }
+    width: calc((2*(100% - 2*2rem)/3 ) + 2rem); }
   .row .col-2-of-4 {
-    width: calc(2 *((128rem - 3*2rem)/4) + 2rem); }
+    width: calc(2 *((100% - 3*2rem)/4) + 2rem); }
   .row .col-3-of-4 {
-    width: calc(3 *((128rem - 3*2rem)/4) + 2 * 2rem); }
+    width: calc(3 *((100% - 3*2rem)/4) + 2 * 2rem); }
 
 .Robo {
   background-image: LINEAR-GRADIENT(TO RIGHT, RGB(0, 255, 157), RGB(113, 0, 184)); }

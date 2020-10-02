@@ -1,0 +1,54 @@
+.Scroll{
+    height: 46rem;
+}
+.card{
+    height: 17rem;
+    @media screen and (max-width: 600px) {
+      height: 12.2rem;
+    }
+    &__photo{
+        height: 11rem;
+        @media screen and (max-width: 600px) {
+          height: 6.7rem;
+        }
+    }
+    &__details{
+        font-size: 1.5rem;
+        @media screen and (max-width: 600px) {
+          font-size: 1rem;
+        }
+        &--email{
+             @media screen and (max-width: 600px) {
+                 font-size: 0.65rem;
+             }
+        }
+    }
+    &__design{
+        box-shadow: 3px 6px 2rem  rgba(0, 0, 0, .5);
+        border-radius: 1.2rem;
+    }
+}
+.Arrow__right{
+    position: absolute;
+    background-image: LINEAR-GRADIENT(TO RIGHT,
+     RGB(0, 0, 0), RGB(0, 0, 0));
+    height: 12rem;
+    width: 5rem;
+    top: 20%;
+    right: 0;
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+.Arrow__left{
+    position: absolute;
+    background-image: LINEAR-GRADIENT(TO RIGHT,
+     RGB(0, 0, 0), RGB(0, 0, 0));
+    height: 12rem;
+    width: 5rem;
+    top: 20%;
+    left: 0;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+.About__Page{
+    position: relative;
+    background-image: LINEAR-GRADIENT(TO RIGHT, RGB(51, 245, 25), RGB(54, 61, 161));
+}

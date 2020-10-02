@@ -1,0 +1,10 @@
+@mixin clearfix{
+  &::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@mixin gradient($col1,$col2){
+  background-image: linear-gradient(to bottom right, $col1, $col2);
+}
