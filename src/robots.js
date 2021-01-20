@@ -1,19 +1,20 @@
 export const robots = [
+  // test
   {
     id: 1,
-    name: 'Leanne Graham',
-    username: 'Bret',
-    email: 'Sincere@april.biz'
+    name: 'Richard',
+    username: 'Richard',
+    email: 'Richard@april.biz'
   },
   {
     id: 2,
-    name: 'Ervin Howell',
+    name: 'Steven',
     username: 'Antonette',
     email: 'Shanna@melissa.tv'
   },
   {
     id: 3,
-    name: 'Clementine Bauch',
+    name: 'Ruth',
     username: 'Samantha',
     email: 'Nathan@yesenia.net'
   },
@@ -58,5 +59,41 @@ export const robots = [
     name: 'Clementina DuBuque',
     username: 'Moriah.Stanton',
     email: 'Rey.Padberg@karina.biz'
-  }
+  },
+  {
+    id: 11,
+    name: 'T1',
+    username: 'T1',
+    email: 't1@karina.biz'
+  },
+  {
+    id: 12,
+    name: 'T2 DuBuque',
+    username: 't2',
+    email: 't2g@karina.biz'
+  },
+  {
+    id: 13,
+    name: 'T3 DuBuque',
+    username: 't3',
+    email: 't3@karina.biz'
+  },
+  {
+    id: 14,
+    name: 'T4 DuBuque',
+    username: 't4',
+    email: 't4@karina.biz'
+  },
+  {
+    id: 15,
+    name: 'T5 DuBuque',
+    username: 't5',
+    email: 't5@karina.biz'
+  },
+  {
+    id: 16,
+    name: 'T6 DuBuque',
+    username: 't6',
+    email: 't6@karina.biz'
+  },
 ];
