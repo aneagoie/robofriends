@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "jest": {
-    "setupTestFrameworkScriptFile": "./src/setupTests.js"
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   },
   "dependencies": {
     "react": "^16.13.1",
@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --coverage --watchAll",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
