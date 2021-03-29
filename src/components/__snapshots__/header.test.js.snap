@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render Card component 1`] = `
+<div>
+  <h1
+    className="f1"
+  >
+    RoboFriends
+  </h1>
+  <CounterButton
+    color="red"
+  />
+</div>
+`;

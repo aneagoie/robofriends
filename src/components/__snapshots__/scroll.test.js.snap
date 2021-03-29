@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render Card component 1`] = `
+<div
+  style={
+    Object {
+      "border": "5px solid black",
+      "height": "800px",
+      "overflow": "scroll",
+    }
+  }
+/>
+`;
