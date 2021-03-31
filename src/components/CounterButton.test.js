@@ -2,7 +2,6 @@ import { shallow } from 'enzyme';
 import React from 'react';
 import CounterButton from './CounterButton';
 import { createSerializer } from 'enzyme-to-json'; 
-import toJson from 'enzyme-to-json';
 import renderer from 'react-test-renderer';
 
 expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
