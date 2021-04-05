@@ -4,6 +4,10 @@
   "private": true,
   "homepage": "https://spiritusanti.github.io/robofriends-1/",
   "dependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.37",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-redux": "^7.2.3",
@@ -11,6 +15,7 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "tachyons": "^4.12.0",
+    "typescript": "^4.2.3",
     "workbox-background-sync": "^5.1.4",
     "workbox-broadcast-update": "^5.1.4",
     "workbox-cacheable-response": "^5.1.4",

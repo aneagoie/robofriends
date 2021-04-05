@@ -1,8 +1,8 @@
 import React from 'react';
-import CardList from '../components/CardList';
-import SearchBox from '../components/SearchBox';
-import Scroll from '../components/Scroll';
-import Header from '../components/header';
+import CardList from '../CardList/CardList';
+import SearchBox from '../SearchBox/SearchBox';
+import Scroll from '../Scroll/Scroll';
+import Header from '../Header/header';
 import './MainPage.styles.css';
 
 class MainPage extends React.Component {
