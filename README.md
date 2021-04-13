@@ -73,3 +73,4 @@ export default ErrorBoundry;
 #### Deployement
 
 - [CRA deployemnt](https://create-react-app.dev/docs/deployment/#github-pages-https-pagesgithubcom)
+- [Page deployed](https://sandracoburn.github.io/robofriends/) with GitHub pages
