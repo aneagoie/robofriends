@@ -70,7 +70,7 @@ class ErrorBoundry extends Component {
 export default ErrorBoundry;
 ```
 
-#### Deployement
+#### Deployment
 
 - [CRA deployemnt](https://create-react-app.dev/docs/deployment/#github-pages-https-pagesgithubcom)
 - [Page deployed](https://sandracoburn.github.io/robofriends/) with GitHub pages
