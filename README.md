@@ -14,7 +14,7 @@ To run the project:
 
 ### Font
 
-- Search for desired font. In this SEGA LOGO FONT was used. Get it from `[CufOnFonts]`( http://www.cufonfonts.com)
+- Search for desired font. In this SEGA LOGO FONT was used. Get it from [CufOnFonts](http://www.cufonfonts.com)
 - Import it in App.css
 - Drop the SEGA.wooff file in project file
 
