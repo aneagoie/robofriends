@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.3",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-scripts": "^3.4.4",
     "tachyons": "^4.12.0"
   },
   "scripts": {
@@ -15,7 +15,7 @@
     "eject": "react-scripts eject"
   },
   "browserslist": {
-    "production": [ 
+    "production": [
       ">0.2%",
       "not dead",
       "not op_mini all"
