@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.3",
-    "tachyons": "^4.12.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3",
+    "tachyons": "^4.12.0",
+    "typescript": "^4.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,8 +16,10 @@
     "eject": "react-scripts eject"
   },
   "browserslist": {
-    "production": [ 
-      ">0.2%",
+    "production": [
+      "last 1 version",
+      ">1%",
+      "maintained node versions",
       "not dead",
       "not op_mini all"
     ],
@@ -25,5 +28,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6"
   }
 }

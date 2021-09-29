@@ -1,0 +1,33 @@
+Error Messages I dealt with
+9/28/21 Robofriends: Npm start' fails on react-scripts-start initial attempt. I did npm install, didn't work, npm update and I ended up with things that needed manual fix. react-script was included and up to date in my package.json. When I did npm build on my orig robofriends, it deleted all of the files I created and just did build on the generic files we started out with, so I forked andrei's version over to my github and created a repo and pushed to my computer.
+
+Moderate Regular Expression Denial of Service 
+Package         browserslist
+Patched in      >=4.16.5
+Dependency of   react-scripts
+Path react-scripts > react-dev-utils > browserslist
+More info https://npmjs.com/advisories/1747
+had to run this command:
+npx browserslist@latest --update-db
+
+Then ran npm audit again b/c there were 3 issues I needed to fix. Above still didn't fix the browserslist issue, so added this in package.json. browserslist was already in there, but I then updated the 1st 3 lines in bracket:
+"browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
+Then I did npm update and all hell broke lose
+Failed to parse package.json data.
+error JSON.parse package.json must be actual JSON, not just JavaScript. I did npm cache clean and then npm cache clean --force. Neither of those worked at all. The reason is that I was missing a comma after "last 1 version". Put that in and now back to 'react-scripts' is not recognized as an internal or external command, operable program or batch file.
+
+ tsutils@3.21.0 requires a peer of typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta but none is installed. You must install peer dependencies yourself.
+ typed in npm install typescript
+
+ npm WARN @babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining@7.15.4 requires a peer of @babel/core@^7.13.0 but none is installed. You must install peer dependencies yourself.
+typed in npm install --save-dev @babel/core @babel/preset-env
+
+Then I typed in npm update and then npm start
+
+9/29/21
+***AFTER ALL THIS I FINALLY HAVE SUCCESS AND THE PROJECT IS STARTING!!***
