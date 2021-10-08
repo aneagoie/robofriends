@@ -36,7 +36,7 @@ this.props.onRequestRobots()
       <h1>Loading</h1> :
       (
         <div className='tc'>
-          <h1 className='f1'>Richard Friends 4</h1>
+          <h1 className='f1'>Richard Friends 5 Redux</h1>
           <SearchBox searchChange={onSearchChange}/>
           <Scroll>
             <CardList robots={filteredRobots} />
