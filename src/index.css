@@ -1,6 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: rgba(0, 45, 110, 1);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(7,27,82,1)), to(rgba(0,128,128,1)));
+  background: -o-linear-gradient(right, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%);
   background: linear-gradient(to left, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
 }
