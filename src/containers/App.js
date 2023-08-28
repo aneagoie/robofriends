@@ -8,7 +8,7 @@ import "./App.css";
 //8/28 left off figuring out where the props in the card component are passed in
 //8/29 keep exploring how this app works. was having trouble w/ destructurring on 8/28
 
-//useEffect will be used whenever the searchfield changes
+//useEffect will be used whenever the searchfield changes.
 
 export default function App() {
   const [robots, setRobots] = useState();
