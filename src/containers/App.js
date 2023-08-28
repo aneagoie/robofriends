@@ -5,12 +5,22 @@ import Scroll from "../components/Scroll";
 import "./App.css";
 
 //my try
-//8/25 left off on this site: https://react.dev/reference/react/useEffect here:
-//An Effect lets you keep your component synchronized with some...
+//8/28 left off figuring out where the props in the card component are passed in
+//8/29 keep exploring how this app works. was having trouble w/ destructurring on 8/28
+
+//useEffect will be used whenever the searchfield changes
 
 export default function App() {
   const [robots, setRobots] = useState();
   const [searchfield, setSearchfield] = useState();
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((response) => response.json())
+      .then((users) => {
+        this.setState({ robots: users });
+      });
+  }, [searchfield]);
 
   function handleChange(e) {
     setRobots(e.target.value);
