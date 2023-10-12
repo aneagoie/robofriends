@@ -1,14 +1,18 @@
 {
   "name": "robofriends",
+  "homepage": "https://lexiefinancial.github.io/RoboFam1/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^3.0.1",
     "tachyons": "^4.12.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -27,4 +31,3 @@
     ]
   }
 }
-
